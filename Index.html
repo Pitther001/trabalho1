@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <!--Titulo aba-->
+        <title>Trabalho 1</title>
+    </head>
+    <body>
+        <header>
+            <!--Titulo pagina e paragrafo-->
+            <h1>Primeiro Trabalho do Semestre</h1>
+            <p>Aqui é apenas um <i>Texto</i> para exemplicar a <b>funcionalidade</b> das escritas dentro de uma pagina.</p>
+        </header>
+        <!--Navegação-->
+        <nav>
+            <li>Menu</li>
+            <li>Principal</li>
+            <li>Produtos</li>
+            <li>Serviços</li>
+            <li>Sobre</li>
+        </nav>
+        <main>
+            <!--Lista-->
+            <ol>
+                <li>Frutas
+                    <ul>
+                        <li>Banana</li>
+                        <li>Maçã</li>
+                        <li>Abacate</li>
+                    </ul>
+                </li>
+                <li>Legumes
+                    <ul>
+                        <li>Cebola</li>
+                        <li>Pimentão</li>
+                    </ul>
+                </li>
+                <li>Cereais
+                    <ul>
+                        <li>Aroz</li>
+                        <li>Feijão</li>
+                    </ul>
+                </li>
+            </ol>
+        
+        <!--Tabela-->
+        <table border="1">
+            <caption><b>Lucro por mês</b></caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Mês</th>
+                    <th colspan="2">Frutas</th>
+                </tr>
+                <tr>
+                    <th>Banana</th>
+                    <th>Maçã</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$100</td>
+                    <td>R$50</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>R$120</td>
+                    <td>R$100</td>
+                </tr>
+                <tr>
+                    <td>Março</td>
+                    <td>R$120</td>
+                    <td>R$150</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>R$340</td>
+                    <td>R$300</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <!--Imagens-->
+        <a href="//ifrs.edu.br/riogrande/">
+            <img src="img/ifrs.png">
+        </a>
+
+        <a href="https://tads.riogrande.ifrs.edu.br/">
+            <figure>
+                <img src="img/tads.png" alt="TADS">
+                <figcaption>Tecnologia em Análise e Desnsenvolvimento de Sistemas</figcaption>
+            </figure>
+        </a>
+
+        <!--Formularios-->
+        <form>
+            <fieldset>
+                <legend> Dados Pessoais </legend>
+                <!--Formulario de nome-->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <!--Formulario de Telefone-->
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{10}" placeholder="Apenas Numeros">
+                <!--Formulario do Celular-->
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" pattern="[0-9]{11}" placeholder="Apenas Numeros" required>
+                <!--Formulario data de Nascimento-->
+                <label for="dataNascimento">Data de Nascimento:</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+                <!--Formulario de Email-->
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+                <!--Formulario Senha-->
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" minlength="8" required>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+        <br>
+        <br>
+        <!--Video incorporado-->
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=eMrpIzHsBKs4rQwj" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </main>
+        <!--Rodapé-->
+        <footer>
+            <address>
+                <p>Razão Social: Qualquer Coisa LTDA - CNPJ: 12.345.678/0001-90</p>
+                <p>Endereço: Rua dos Bobos, 000 - Algum Lugar - LN</p>
+                <p>Telefone: (77) 3456-7890 - Email: contato@qualquercoisa.com</p>
+            </address>
+            <p>&copy; 2025 Qualquer Coisa. Todos os direitos reservados.</p>
+        </footer>
+
+    </body>
+</html>
